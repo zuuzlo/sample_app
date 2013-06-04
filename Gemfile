@@ -6,7 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '2.9.0'
+  gem 'guard-rspec', '0.5.5'
 end
 
 
@@ -25,7 +26,12 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'capybara'
+  gem 'rspec-rails', '2.9.0'
+  gem 'capybara', '1.1.2'
+  gem 'rb-inotify', '~> 0.9'
+  gem 'libnotify', '0.5.9'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '0.9.0'
 end
 
 
